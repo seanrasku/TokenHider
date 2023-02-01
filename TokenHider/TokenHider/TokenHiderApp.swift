@@ -3,7 +3,6 @@
 //  TokenHider
 //
 //  Created by Sean Rasku-Casas on 2/1/23.
-//
 
 import SwiftUI
 import Foundation
