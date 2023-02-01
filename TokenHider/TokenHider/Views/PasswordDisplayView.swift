@@ -77,10 +77,3 @@ struct passwordView: View {
     
     
 }
-
-
-//struct PasswordDisplayView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        PasswordDisplayView()
-//    }
-//}
