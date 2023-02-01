@@ -11,13 +11,11 @@ import CryptoKit
 @main
 struct TokenHiderApp: App {
 
-    @StateObject var auth = AuthenticationViewModel()
     @StateObject var initial = InitialViewModel()
     var body: some Scene {
         WindowGroup {
             InitialView()
                 .environmentObject(initial)
-                .environmentObject(auth)
         }
     }
 }
