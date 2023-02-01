@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		142625F9298ACE65001FABF4 /* TokenHiderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142625F8298ACE65001FABF4 /* TokenHiderApp.swift */; };
+		142625FD298ACE66001FABF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 142625FC298ACE66001FABF4 /* Assets.xcassets */; };
+		14262600298ACE66001FABF4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 142625FF298ACE66001FABF4 /* Preview Assets.xcassets */; };
+		1426260A298ACE66001FABF4 /* TokenHiderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14262609298ACE66001FABF4 /* TokenHiderTests.swift */; };
+		14262614298ACE66001FABF4 /* TokenHiderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14262613298ACE66001FABF4 /* TokenHiderUITests.swift */; };
+		14262616298ACE66001FABF4 /* TokenHiderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14262615298ACE66001FABF4 /* TokenHiderUITestsLaunchTests.swift */; };
+		14262625298ACF37001FABF4 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14262624298ACF37001FABF4 /* AuthenticationViewModel.swift */; };
+		14262627298ACF4D001FABF4 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14262626298ACF4D001FABF4 /* InitialView.swift */; };
+		1426262A298AD07E001FABF4 /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14262629298AD07E001FABF4 /* Secret.swift */; };
+		1426262D298AD25B001FABF4 /* Private.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1426262C298AD25B001FABF4 /* Private.swift */; };
+		14262630298AD357001FABF4 /* Crypto in Frameworks */ = {isa = PBXBuildFile; productRef = 1426262F298AD357001FABF4 /* Crypto */; };
+		14262632298AD379001FABF4 /* InitialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14262631298AD379001FABF4 /* InitialViewModel.swift */; };
+		14262636298AD422001FABF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14262635298AD422001FABF4 /* ContentView.swift */; };
+		14262638298AD439001FABF4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14262637298AD439001FABF4 /* HomeView.swift */; };
+		1426263A298AD48F001FABF4 /* PasswordCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14262639298AD48F001FABF4 /* PasswordCreateView.swift */; };
+		1426263C298AD4C2001FABF4 /* Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1426263B298AD4C2001FABF4 /* Password.swift */; };
+		1426263E298AD54A001FABF4 /* PasswordDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1426263D298AD549001FABF4 /* PasswordDisplayView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14262606298ACE66001FABF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 142625ED298ACE65001FABF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 142625F4298ACE65001FABF4;
+			remoteInfo = TokenHider;
+		};
+		14262610298ACE66001FABF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 142625ED298ACE65001FABF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 142625F4298ACE65001FABF4;
+			remoteInfo = TokenHider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		142625F5298ACE65001FABF4 /* TokenHider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TokenHider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		142625F8298ACE65001FABF4 /* TokenHiderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenHiderApp.swift; sourceTree = "<group>"; };
+		142625FC298ACE66001FABF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		142625FF298ACE66001FABF4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		14262605298ACE66001FABF4 /* TokenHiderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TokenHiderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14262609298ACE66001FABF4 /* TokenHiderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenHiderTests.swift; sourceTree = "<group>"; };
+		1426260F298ACE66001FABF4 /* TokenHiderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TokenHiderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14262613298ACE66001FABF4 /* TokenHiderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenHiderUITests.swift; sourceTree = "<group>"; };
+		14262615298ACE66001FABF4 /* TokenHiderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenHiderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		14262624298ACF37001FABF4 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		14262626298ACF4D001FABF4 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
+		14262629298AD07E001FABF4 /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
+		1426262C298AD25B001FABF4 /* Private.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Private.swift; sourceTree = "<group>"; };
+		14262631298AD379001FABF4 /* InitialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewModel.swift; sourceTree = "<group>"; };
+		14262635298AD422001FABF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		14262637298AD439001FABF4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		14262639298AD48F001FABF4 /* PasswordCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCreateView.swift; sourceTree = "<group>"; };
+		1426263B298AD4C2001FABF4 /* Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password.swift; sourceTree = "<group>"; };
+		1426263D298AD549001FABF4 /* PasswordDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordDisplayView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		142625F2298ACE65001FABF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14262630298AD357001FABF4 /* Crypto in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14262602298ACE66001FABF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1426260C298ACE66001FABF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		142625EC298ACE65001FABF4 = {
+			isa = PBXGroup;
+			children = (
+				142625F7298ACE65001FABF4 /* TokenHider */,
+				14262608298ACE66001FABF4 /* TokenHiderTests */,
+				14262612298ACE66001FABF4 /* TokenHiderUITests */,
+				142625F6298ACE65001FABF4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		142625F6298ACE65001FABF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				142625F5298ACE65001FABF4 /* TokenHider.app */,
+				14262605298ACE66001FABF4 /* TokenHiderTests.xctest */,
+				1426260F298ACE66001FABF4 /* TokenHiderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		142625F7298ACE65001FABF4 /* TokenHider */ = {
+			isa = PBXGroup;
+			children = (
+				1426262B298AD232001FABF4 /* Schemas */,
+				14262628298AD016001FABF4 /* cryptoHelpers */,
+				14262623298ACEBE001FABF4 /* Views */,
+				14262622298ACEAB001FABF4 /* ViewModels */,
+				142625F8298ACE65001FABF4 /* TokenHiderApp.swift */,
+				142625FC298ACE66001FABF4 /* Assets.xcassets */,
+				142625FE298ACE66001FABF4 /* Preview Content */,
+			);
+			path = TokenHider;
+			sourceTree = "<group>";
+		};
+		142625FE298ACE66001FABF4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				142625FF298ACE66001FABF4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		14262608298ACE66001FABF4 /* TokenHiderTests */ = {
+			isa = PBXGroup;
+			children = (
+				14262609298ACE66001FABF4 /* TokenHiderTests.swift */,
+			);
+			path = TokenHiderTests;
+			sourceTree = "<group>";
+		};
+		14262612298ACE66001FABF4 /* TokenHiderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				14262613298ACE66001FABF4 /* TokenHiderUITests.swift */,
+				14262615298ACE66001FABF4 /* TokenHiderUITestsLaunchTests.swift */,
+			);
+			path = TokenHiderUITests;
+			sourceTree = "<group>";
+		};
+		14262622298ACEAB001FABF4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				14262624298ACF37001FABF4 /* AuthenticationViewModel.swift */,
+				14262631298AD379001FABF4 /* InitialViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		14262623298ACEBE001FABF4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				14262626298ACF4D001FABF4 /* InitialView.swift */,
+				14262635298AD422001FABF4 /* ContentView.swift */,
+				14262637298AD439001FABF4 /* HomeView.swift */,
+				14262639298AD48F001FABF4 /* PasswordCreateView.swift */,
+				1426263D298AD549001FABF4 /* PasswordDisplayView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		14262628298AD016001FABF4 /* cryptoHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				14262629298AD07E001FABF4 /* Secret.swift */,
+			);
+			path = cryptoHelpers;
+			sourceTree = "<group>";
+		};
+		1426262B298AD232001FABF4 /* Schemas */ = {
+			isa = PBXGroup;
+			children = (
+				1426262C298AD25B001FABF4 /* Private.swift */,
+				1426263B298AD4C2001FABF4 /* Password.swift */,
+			);
+			path = Schemas;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		142625F4298ACE65001FABF4 /* TokenHider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14262619298ACE66001FABF4 /* Build configuration list for PBXNativeTarget "TokenHider" */;
+			buildPhases = (
+				142625F1298ACE65001FABF4 /* Sources */,
+				142625F2298ACE65001FABF4 /* Frameworks */,
+				142625F3298ACE65001FABF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TokenHider;
+			packageProductDependencies = (
+				1426262F298AD357001FABF4 /* Crypto */,
+			);
+			productName = TokenHider;
+			productReference = 142625F5298ACE65001FABF4 /* TokenHider.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14262604298ACE66001FABF4 /* TokenHiderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1426261C298ACE66001FABF4 /* Build configuration list for PBXNativeTarget "TokenHiderTests" */;
+			buildPhases = (
+				14262601298ACE66001FABF4 /* Sources */,
+				14262602298ACE66001FABF4 /* Frameworks */,
+				14262603298ACE66001FABF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14262607298ACE66001FABF4 /* PBXTargetDependency */,
+			);
+			name = TokenHiderTests;
+			productName = TokenHiderTests;
+			productReference = 14262605298ACE66001FABF4 /* TokenHiderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1426260E298ACE66001FABF4 /* TokenHiderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1426261F298ACE66001FABF4 /* Build configuration list for PBXNativeTarget "TokenHiderUITests" */;
+			buildPhases = (
+				1426260B298ACE66001FABF4 /* Sources */,
+				1426260C298ACE66001FABF4 /* Frameworks */,
+				1426260D298ACE66001FABF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14262611298ACE66001FABF4 /* PBXTargetDependency */,
+			);
+			name = TokenHiderUITests;
+			productName = TokenHiderUITests;
+			productReference = 1426260F298ACE66001FABF4 /* TokenHiderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		142625ED298ACE65001FABF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					142625F4298ACE65001FABF4 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					14262604298ACE66001FABF4 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 142625F4298ACE65001FABF4;
+					};
+					1426260E298ACE66001FABF4 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 142625F4298ACE65001FABF4;
+					};
+				};
+			};
+			buildConfigurationList = 142625F0298ACE65001FABF4 /* Build configuration list for PBXProject "TokenHider" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 142625EC298ACE65001FABF4;
+			packageReferences = (
+				1426262E298AD357001FABF4 /* XCRemoteSwiftPackageReference "swift-crypto" */,
+			);
+			productRefGroup = 142625F6298ACE65001FABF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				142625F4298ACE65001FABF4 /* TokenHider */,
+				14262604298ACE66001FABF4 /* TokenHiderTests */,
+				1426260E298ACE66001FABF4 /* TokenHiderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		142625F3298ACE65001FABF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14262600298ACE66001FABF4 /* Preview Assets.xcassets in Resources */,
+				142625FD298ACE66001FABF4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14262603298ACE66001FABF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1426260D298ACE66001FABF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		142625F1298ACE65001FABF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1426263E298AD54A001FABF4 /* PasswordDisplayView.swift in Sources */,
+				14262638298AD439001FABF4 /* HomeView.swift in Sources */,
+				14262625298ACF37001FABF4 /* AuthenticationViewModel.swift in Sources */,
+				14262636298AD422001FABF4 /* ContentView.swift in Sources */,
+				14262632298AD379001FABF4 /* InitialViewModel.swift in Sources */,
+				1426263C298AD4C2001FABF4 /* Password.swift in Sources */,
+				1426262D298AD25B001FABF4 /* Private.swift in Sources */,
+				1426262A298AD07E001FABF4 /* Secret.swift in Sources */,
+				14262627298ACF4D001FABF4 /* InitialView.swift in Sources */,
+				142625F9298ACE65001FABF4 /* TokenHiderApp.swift in Sources */,
+				1426263A298AD48F001FABF4 /* PasswordCreateView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14262601298ACE66001FABF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1426260A298ACE66001FABF4 /* TokenHiderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1426260B298ACE66001FABF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14262614298ACE66001FABF4 /* TokenHiderUITests.swift in Sources */,
+				14262616298ACE66001FABF4 /* TokenHiderUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14262607298ACE66001FABF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 142625F4298ACE65001FABF4 /* TokenHider */;
+			targetProxy = 14262606298ACE66001FABF4 /* PBXContainerItemProxy */;
+		};
+		14262611298ACE66001FABF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 142625F4298ACE65001FABF4 /* TokenHider */;
+			targetProxy = 14262610298ACE66001FABF4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		14262617298ACE66001FABF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		14262618298ACE66001FABF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1426261A298ACE66001FABF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TokenHider/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = src.TokenHider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1426261B298ACE66001FABF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TokenHider/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = src.TokenHider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1426261D298ACE66001FABF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = src.TokenHiderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TokenHider.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TokenHider";
+			};
+			name = Debug;
+		};
+		1426261E298ACE66001FABF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = src.TokenHiderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TokenHider.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TokenHider";
+			};
+			name = Release;
+		};
+		14262620298ACE66001FABF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = src.TokenHiderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TokenHider;
+			};
+			name = Debug;
+		};
+		14262621298ACE66001FABF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = src.TokenHiderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TokenHider;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		142625F0298ACE65001FABF4 /* Build configuration list for PBXProject "TokenHider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14262617298ACE66001FABF4 /* Debug */,
+				14262618298ACE66001FABF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14262619298ACE66001FABF4 /* Build configuration list for PBXNativeTarget "TokenHider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1426261A298ACE66001FABF4 /* Debug */,
+				1426261B298ACE66001FABF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1426261C298ACE66001FABF4 /* Build configuration list for PBXNativeTarget "TokenHiderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1426261D298ACE66001FABF4 /* Debug */,
+				1426261E298ACE66001FABF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1426261F298ACE66001FABF4 /* Build configuration list for PBXNativeTarget "TokenHiderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14262620298ACE66001FABF4 /* Debug */,
+				14262621298ACE66001FABF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1426262E298AD357001FABF4 /* XCRemoteSwiftPackageReference "swift-crypto" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-crypto.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1426262F298AD357001FABF4 /* Crypto */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1426262E298AD357001FABF4 /* XCRemoteSwiftPackageReference "swift-crypto" */;
+			productName = Crypto;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 142625ED298ACE65001FABF4 /* Project object */;
+}
