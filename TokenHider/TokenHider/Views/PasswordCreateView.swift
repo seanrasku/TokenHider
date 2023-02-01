@@ -55,7 +55,7 @@ struct PasswordCreateView: View {
     }
     
     
-    func createPassword() {
+    func createPassword() { //uses end to end encryption simulator function to ensure passwords have an extra layer of security 
         success = false
         do {
             let symmetric = Secret().getSymmetricKey(forKey: "symmetricPasswordKey")
@@ -72,10 +72,8 @@ struct PasswordCreateView: View {
                 print(String(data: data2, encoding: .utf8)!)
                 UserDefaults.standard.set(data2, forKey: "allPasswords")
                 success = true
-                print("sup")
                 return
             }
-            print("got here")
             let givenData = UserDefaults.standard.data(forKey: "allPasswords")
             
             let decoder = JSONDecoder()
